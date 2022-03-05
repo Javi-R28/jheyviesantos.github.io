@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #707070;
+    font-family: 'Gothic A1', sans-serif;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+.navigation{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navigation li{
+    padding: 20px 90px;
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #707070;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul{
+    list-style-type: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.item{
+    display: block;
+    width: auto;
+}
+.toggle{
+    display: none;
+}
+.second-container{
+    display: flex;
+    padding-left: 350px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.picture{
+    padding-right: 50px;
+}
+.picture img{
+    border-radius: 50%;
+    border: 2px solid #707070;
+}
+.name{
+    padding-top: 50px;
+}
+.name .n{
+    font-size: 35px;
+    font-weight: 500;
+}
+.name .subt{
+    font-size: 20px;
+    justify-content: center;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    border-width: 5px;
+    color: #707070;
+}
+.complex{
+    display: flex;
+    padding-left: 350px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.third-container{
+    display: flex;
+    flex-direction: column;
+    border-right: 4px solid #707070;
+    padding-right: 10px;
+}
+.contact{
+    text-align: end;
+    padding-bottom: 30px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact ul li{
+    padding: 15px;
+}
+.ic{
+    float: right;
+    padding-top: 5px;
+}
+.language{
+    text-align: end;
+}
+.language li{
+    padding: 5px;
+}
+.fourth-container{
+    padding-left: 20px;
+}
+.yr{
+    font-weight: 700;
+    padding: 5px;
+}
+ul.coll > li {
+    text-indent: -5px;
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+ul.coll > li:before {
+    content: "-";
+    text-indent: -5px;
+}
+.education{
+    padding-bottom: 50px;
+}
+.data ul li .b{
+    font-weight: 700;
+}
+.data ul li{
+    padding: 5px;
+}
+.data{
+    padding-bottom: 50px;
+}
+.link ul li{
+    display: inline-block;
+}
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+opacity: 0.7;
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+/* Mobile View */
+@media screen and (min-device-width: 300px) and (max-device-width: 768px) {
+    .main-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .second-container{
+        flex-direction: column;
+        padding: 0;
+        padding-left: 0px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
+    .complex{
+        flex-direction: column;
+        padding: 0;
+    }
+    .third-container{
+        flex-direction: column;
+        border-right: none;
+    }
+    .fourth-container{
+        flex-direction: column;
+        padding: 20;
+    }
+    .navigation .menu .toggle{
+        display: block;
+    }
+    .navigation .menu .item{
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .navigation .menu .item.active{
+        display: block;
+    }
+    .toggle{
+        cursor: pointer;
+    }
+    .bars{
+        background: #707070;
+        display: inline-block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+    }
+    .bars::before,.bars::after{
+        background: #707070;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 18px;
+        position: absolute;
+    }
+    .bars::before{
+        top: 5px;
+    }
+    .bars::after{
+        top: -5px;
+    }
+    .navigation ul li a{
+        text-decoration: none;
+        color: #707070;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .menu ul li a:hover{
+        text-decoration: underline;
+    }
+    .picture{
+        padding-left: 75px;
+    }
+    p{
+        text-align: center;
+    }
+    .contact{
+        text-align: center;
+    }
+    .ic{
+        padding-right: 30px;
+    }
+    .title{
+        text-align: center;
+    }
+    .language{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .education{
+        text-align: left;
+        padding-bottom: 30px;
+    }
+}

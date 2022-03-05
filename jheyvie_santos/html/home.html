@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>My Profile | Jheyvie Santos</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../css/home.css'>
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $(".navigation .menu .toggle").on("click",function(){
+                    if($(".navigation .menu .item").hasClass("active")){
+                        $(".navigation .menu .item").removeClass("active");
+                    }else{
+                        $(".navigation .menu .item").addClass("active");
+                    }
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="picture">
+                <img src="..//images/jheyvie.jpg" alt="image" height="752">
+            </div>
+            <div class="second-container">
+                <div class="navi">
+                    <nav class="navigation">
+                        <ul class="menu">
+                            <li class="toggle"><span class="bars"></span></li>
+                            <li class="item"><a href="#">HOME</a></li>
+                            <li class="item"><a href="../html/about_me.html">ABOUT ME</a></li>
+                            <li class="item"><a href="#">MY JOURNEY</a></li>
+                            <li class="item"><a href="#">WORKS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="content">
+                    <p class="name">JHEYVIE SANTOS</p>
+                    <br>
+                    <p class="sub">HI THERE!</p>
+                    <p class="cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis assumenda dignissimos odit at numquam eius voluptates tempora architecto, officia distinctio facilis pariatur, reiciendis reprehenderit commodi quasi illum enim, culpa corrupti soluta magnam exercitationem iste repudiandae. Sequi exercitationem distinctio quos, dolorum eum odit, reprehenderit, culpa harum eveniet neque illum vero!</p>
+                    <button class="hire">Hire me!</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

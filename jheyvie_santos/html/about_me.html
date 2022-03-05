@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>About me | Jheyvie Santos</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../css/about_me.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Gothic Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+        <link rel="icon" type="image/png" href="../images/logo.png">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $(".navigation .menu .toggle").on("click",function(){
+                    if($(".navigation .menu .item").hasClass("active")){
+                        $(".navigation .menu .item").removeClass("active");
+                    }else{
+                        $(".navigation .menu .item").addClass("active");
+                    }
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <div class="main-container">
+            <!-- Header -->
+            <div class="navi">
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li class="toggle"><span class="bars"></span></li>
+                        <li class="item"><a href="../html/home.html">HOME</a></li>
+                        <li class="item"><a href="#">ABOUT ME</a></li>
+                        <li class="item"><a href="#">MY JOURNEY</a></li>
+                        <li class="item"><a href="#">WORKS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Pic & Name -->
+            <div class="second-container">
+                <div class="picture">
+                    <img src="../images/dp.jpg" alt="dp" height="225">
+                </div>
+                <div class="name">
+                    <p class="n">JHEYVIE SANTOS</p>
+                    <p class="subt">FRONT-END PROGRAMMER</p>
+                    <br>
+                    <p class="obj">Giving my diligence and commitment to my job, to be able to improve and offer my skills in the company.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="complex">
+                <!-- contact & language -->
+                <div class="third-container">
+                    <div class="contact">
+                        <p class="title">CONTACT</p>
+                        <br>
+                        <ul>
+                            <img src="../images/call_ic.png" alt="call" class="ic" height="40">
+                            <li class="con">(+63) 9308660152 &nbsp;</li>
+                            <img src="../images/email_ic.png" alt="call" class="ic" height="40">
+                            <li class="con">santosjheyvie@gmail.com &nbsp;</li>
+                            <img src="../images/location_ic.png" alt="call" class="ic" height="40">
+                            <li class="con">Purok I Abulalas, Hagonoy,<br> Bulacan, Philippines &nbsp;</li>
+                        </ul>
+                    </div>
+                    <div class="language">
+                        <p class="title">PROGRAMMING LANGUAGES</p>
+                        <br>
+                        <ul>
+                            <li class="language">JAVA</li>
+                            <li class="language">C++</li>
+                            <li class="language">HTML</li>
+                            <li class="language">CSS</li>
+                            <li class="language">JAVASCRIPT</li>
+                            <li class="language">SQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Education Background/Personal data/links -->
+                <div class="fourth-container">
+                    <div class="education">
+                        <p class="title">EDUCATION</p>
+                        <br>
+                        <p class="yr">2019 - Present&emsp;&emsp;COLLEGE&emsp;&emsp;BULACAN STATE UNIVERSITY</p>
+                        <ul class="coll">
+                            <li>Bachelor of Science in Information Technology&emsp;&emsp;3rd Year</li>
+                        </ul>
+                        <p class="yr">2017-2019&emsp;&emsp;SENIOR HIGH SCHOOL&emsp;&emsp;BULACAN POLYTECHNIC COLEGE</p>
+                        <ul class="coll">
+                            <li>Bread and Pastry Production&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1st & 2nd Year</li>
+                            <li>Food and Beverage Services &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1st & 2nd Year</li>
+                            <li>Computer Programming&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  2nd Year</li>
+                        </ul>
+                        <p class="yr">2014-2017&emsp;&emsp;HIGH SCHOOL&emsp;&emsp;SAN PEDRO NATIONAL HIGH SCHOOL</p>
+                        <p class="yr">2009-2014&emsp;&emsp;ELEMENTARY&emsp;&emsp;HANGGA ELEMENTARY SCHOOL</p>
+                    </div>
+                    <div class="data">
+                        <p class="title">PERSONAL DATA</p>
+                        <br>
+                        <ul>
+                            <li><span class="b">AGE:</span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;20 yrs. old</li>
+                            <li><span class="b">BIRTHDAY:</span>&emsp;&emsp;&emsp; March 28,2001</li>
+                            <li><span class="b">GENDER:</span>&emsp;&emsp;&emsp;&emsp;Male</li>
+                            <li><span class="b">CIVIL STATUS:</span>&nbsp;&nbsp;&emsp; Single</li>
+                            <li><span class="b">HEIGHT:</span>&emsp;&emsp;&emsp;&emsp; 168cm</li>
+                            <li><span class="b">WEIGHT:</span>&emsp;&emsp;&emsp;&emsp; 60kl</li>
+                            <li><span class="b">NATIONALITY:</span>&nbsp;&nbsp;&emsp; Filipino</li>
+                            <li><span class="b">RELIGION:</span>&emsp;&emsp;&emsp;&nbsp; Catholic</li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <ul class="menu simple">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/jheyviesantos/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/JheyvieSantos/?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
